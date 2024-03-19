@@ -1,0 +1,172 @@
+<!-- Koko Sessou Project Sandbox. -->
+<!-- Project# Hair Day Website -->
+<!-- March 2024  -->
+<!-- HTML File -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hair Day</title>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="media/logo.png" alt="logo">
+    </header>
+
+    <!-- Navigation Section -->
+    <nav id="home">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#schedule">Schedule</a></li>            
+            <!-- <li><a href="#contact">Contact</a></li> -->
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main class="container">
+        <!-- Banner Section -->
+        <section class="banner">
+            <h1 class="bannerText">
+                <span class="text1">COME NOW!!!<br></span>
+                <span class="text2">
+                    20% off products <br>
+                    50% off services!!! <br>
+                </span>
+                <span class="text3">Conditions apply!</span>
+            </h1>
+            <ul>
+                <!-- Banner images -->
+                <li><img src="media/promoBanner1.png" alt="Promo Image 1"></li>
+                <li><img src="media/promoBanner2.png" alt="Promo Image 2"></li>
+                <li><img src="media/promoBanner3.png" alt="Promo Image 3"></li>
+                <li><img src="media/promoBanner4.png" alt="Promo Image 4"></li>
+            </ul>
+        </section>
+
+        <!-- Main Content Section -->
+        <section class="mainContent">
+            <!-- About Us Section -->
+            <article class="aboutUs">
+                <h2 id="about">About us</h2>
+                <img src="media/about.png" alt="About Us Image">
+                <p>
+                    <!-- About Us Paragraph -->
+                    Based in Madison, Wisconsin, Hair Day is a boutique hair salon that specializes in cut, color,
+                    and
+                    styling. Hair Day also offers makeup and nail services, prides itself on its warm and relaxing
+                    atmosphere and is best known for edgy hair colors and on-trend cuts. The salon can only accommodate
+                    a
+                    small number of coloring appointments each week, so clients need to book far in advance. To keep
+                    clients inspired between appointments, the employees share makeup and nail tutorials on the Hair Day
+                    website.
+                </p>
+                <p>
+                    Pria, the owner of Hair Day, earned her certificate as a colorist and immediately started
+                    specializing in edgy, custom coloring techniques. She wanted to create a "treat yourself"
+                    environment
+                    for her clients. Pria opened the salon with her good friend and talented hairdresser, Garry. They
+                    have
+                    a staff of seven: two stylists, three colorists, one manicurist, and one make-up artist.
+                </p>
+                <a href="#home">Home</a>
+            </article>
+
+            <!-- Our Services Section -->
+            <article class="ourServices">
+                <h2 id="services">Services</h2>
+                <img src="media/services.png" alt="Our Services Image">
+                <ul>
+                    <li>Hair cutting, coloring, highlighting, and styling</li>
+                    <li>Hair and scalp treatments</li>
+                    <li>Hair extensions</li>
+                    <li>Curling hair</li>
+                    <li>Waxing and other forms of hair removal</li>
+                    <li>Eyelash extensions</li>
+                    <li>Nail treatments</li>
+                    <li>Facials and skin care treatments</li>
+                </ul>
+            </article>
+
+            <!-- Our Schedule Section -->
+            <article class="ourSchedule">
+                <h2>Schedule</h2>
+                <img src="media/schedule.png" alt="Our Schedule Image">
+
+                <!-- Hours  -->
+                <div class="hours">
+                    <h3>Hours</h3>
+                    <table class="hours">
+                        <tbody>
+                            <tr>
+                                <td>Monday-Thursday</td>
+                                <td>10 AM - 7 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Friday - Saturday</td>
+                                <td>9 AM - 6 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>Closed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- SChedule Form-->
+                <form id="schedule" title="Schedule">                    
+                    <div>
+                        <label for="email_address">Email Address</label>
+                        <input type="email" id="email_address" name="email_address">
+                    </div>
+                    <div>
+                        <label for="booking_date">Date of Booking</label>
+                        <input type="date" id="booking_date" name="booking_date">
+                    </div>
+                    <div>
+                        <label for="people">Number of people</label>
+                        <input type="number" id="people" min="1" max="8" name="people">
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" id="agree" name="agree" required>
+                            I agree to the cancellation policy
+                        </label>
+                    </div>
+                    <button type="submit">Book Now</button>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div>
+            <img src="media/logo_footer.png" alt="Footer Logo">
+        </div>
+        <div id="copyright">
+            <p>
+                <!-- Use &copy; for copyright symbol -->
+                Copyright 2024 &copy; Hair Day Salon & Spa.
+                <a href="terms.html" title="Terms and Conditions">Terms and Conditions</a><br>
+                <a href="terms.html" title="Privacy Policy">Privacy Policy</a>
+                Designed by
+                <a href="terms.html" title="Hair Day Group">Hair Day Group</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

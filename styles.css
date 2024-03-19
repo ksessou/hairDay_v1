@@ -1,0 +1,292 @@
+/* Koko Sessou Project Sandbox. */
+/* Project# Hair Day Website */
+/* March 2024 */
+/* CSS File */
+
+
+
+/* Resetting styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and navigation styles */
+header,
+nav {
+    background-color: #071805;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Global styles for the body */
+body {
+    background-color: #e0e0d5;
+    font-family: 'Roboto', sans-serif;
+    margin: 1rem 2%;
+    max-height: 10vh;
+    max-width: 95vw;
+    scroll-behavior: smooth;
+    /* width: 100%;     */
+}
+
+/* Header styles */
+header>img {
+    display: block;
+    margin: 0 auto;
+    max-width: 20%;
+    height: auto;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+nav a {
+    color: #4a31e0;
+}
+
+/* Links hover effect */
+nav a:hover,
+div#copyright a:hover {
+    color: #d56d4d;
+}
+
+/* Banner styles */
+.banner {
+    width: 100%;
+    overflow-x: auto;
+    position: relative;
+}
+
+.banner ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.banner li {
+    position: relative;
+}
+
+.banner li img {
+    min-width: 20rem;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Keyframe animation for flashing text */
+@keyframes flash {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+.banner .bannerText .text1 {
+    font-size: 2rem;
+    color: red;
+    animation: flash 3s infinite;
+}
+
+.banner .bannerText .text2 {
+    font-size: 1rem;
+    color: red;
+}
+
+.banner .bannerText .text3 {
+    font-size: 0.6rem;
+    color: black;
+}
+
+/* Section styles */
+section {
+    display: flex;
+    width: 90%;
+}
+
+.mainContent article {
+    flex: 1;
+    margin: 0 0.5rem;
+}
+
+.mainContent article h2 {
+    font-size: 2rem;
+    padding: 1rem;
+    text-decoration: underline;
+}
+
+.mainContent article img {
+    max-width: 100%;
+    padding: 0.5rem;
+}
+
+/* Article styles */
+article {
+    flex: 1;
+    margin: 0 0.5rem;
+    min-width: 27rem;
+}
+
+/* List styles for services */
+#services~ul {
+    list-style: none;
+}
+
+#services~ul li {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff5722;
+}
+
+/* Hours styles */
+.hours {
+    flex: 1;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+/* Hours table styles */
+.hours table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    max-height: 50px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+}
+
+.hours td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+
+/* Appointment Form styles */
+#schedule {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+#schedule input,
+#schedule button {
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button styles */
+#schedule button {
+    background-color: #4a31e0;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+    width: 30%;
+}
+
+/* Button hover effect */
+#schedule button:hover {
+    background-color: #ff5722;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #071805;
+    color: #fff;
+    padding: 15px;
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Footer div Styles */
+footer div {
+    flex-basis: calc(50% - 20px);
+    padding: 5px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+/* Footer logo Styles */
+footer div img {
+    max-width: 10rem;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+}
+
+/* Copyright Section Styles */
+div#copyright {
+    flex-basis: calc(50% - 20px);
+    text-align: center;
+    padding: 0 0.5% 0.5% 0;
+    font-size: 0.6rem;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    body {
+        margin: 2rem 5%;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    footer>div>img {
+        max-width: 50%;
+    }
+
+    .banner ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner li img {
+        min-width: 100%;
+        width: auto;
+        max-height: 30rem;
+    }
+
+    .banner .bannerText .text1 {
+        font-size: 30px;
+    }
+
+    .banner .bannerText .text2 {
+        font-size: 16px;
+    }
+
+    .banner .bannerText .text3 {
+        font-size: 8px;
+    }
+}
